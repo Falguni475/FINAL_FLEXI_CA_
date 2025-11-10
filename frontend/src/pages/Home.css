@@ -1,0 +1,51 @@
+.home-container {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.banner {
+  background: linear-gradient(to right, #00CED1, #1E90FF);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.banner p {
+  font-size: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: #FFD700;
+  color: #1E90FF;
+  margin: 0 12px;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: #FFA500;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}

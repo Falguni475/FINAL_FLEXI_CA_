@@ -1,0 +1,50 @@
+.dashboard-container {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 40px;
+}
+
+.user-info-card {
+  background: linear-gradient(to right, #00CED1, #1E90FF);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  animation: fadeIn 1.5s ease;
+  margin-bottom: 40px;
+}
+
+.user-info-card h2 {
+  margin-bottom: 12px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #FFD700;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  width: 200px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  background: #FFA500;
+  transform: scale(1.05);
+}
+
+.stat-card h3 {
+  margin-bottom: 12px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
